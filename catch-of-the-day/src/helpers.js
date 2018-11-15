@@ -61,12 +61,12 @@ export function getFunName() {
   ];
 
   const nouns = [
-    "women",
-    "men",
-    "children",
-    "teeth",
-    "feet",
-    "people",
+    "otter",
+    "dingo",
+    "mumpitz",
+    "wanga",
+    "dizzke",
+    "woot",
     "leaves",
     "mice",
     "geese",
