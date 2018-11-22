@@ -1,4 +1,6 @@
 .order-enter {
+  color: #fff;
+  border-color: #fff !important;
   -webkit-transform: translateX(-120%);
           transform: translateX(-120%);
   -webkit-transition: 0.5s;
@@ -8,20 +10,26 @@
 }
 .order-enter.order-enter-active {
   max-height: 60px;
+  padding: 2rem 0 !important;
+  color: #000;
+  border-color: #000;
   -webkit-transform: translateX(0);
           transform: translateX(0);
-  padding: 2rem 0 !important;
 }
 .order-exit {
-  -webkit-transition: 0.5s;
-  transition: 0.5s;
+  color: #000;
+  border-color: #000;
   -webkit-transform: translateX(0);
           transform: translateX(0);
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
 }
 .order-exit.order-exit-active {
+  color: #fff;
+  border-color: #fff;
   -webkit-transform: translateX(120%);
           transform: translateX(120%);
-  padding: 0;
+  padding: 0 !important;
 }
 .count-enter {
   background: #f00;
@@ -31,22 +39,19 @@
           transform: translateY(100%);
 }
 .count-enter.count-enter-active {
-  background: #ff0;
   -webkit-transform: translateY(0);
           transform: translateY(0);
 }
 .count-exit {
-  background: #000;
-  -webkit-transform: translateY(0);
-          transform: translateY(0);
   -webkit-transition: 0.5s;
   transition: 0.5s;
+}
+transform translateY(0) {
   position: absolute;
   left: 0;
   bottom: 0;
 }
-.count-exit.count-exit-active {
-  background: #008000;
+transform translateY(0).count-exit-active {
   -webkit-transform: translateY(-100%) scale(3);
           transform: translateY(-100%) scale(3);
 }
